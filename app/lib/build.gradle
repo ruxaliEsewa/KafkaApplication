@@ -1,0 +1,17 @@
+plugins {
+    id 'java-library'
+    id 'org.jetbrains.kotlin.jvm'
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_7
+    targetCompatibility = JavaVersion.VERSION_1_7
+}
+
+dependencies {
+    //kotlin
+    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.10")
+
+    //kafka
+    implementation("org.apache.kafka:kafka-clients:2.8.0")
+}
